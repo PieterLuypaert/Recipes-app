@@ -6,8 +6,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   const recipeContainer = document.querySelector(".recipe-container");
   const searchInput = document.querySelector(".search-input");
 
-  const recipes = await (await fetch(apiUrl, { headers })).json();
-  const displayRecipes = (recipes) => {
+  let i = 0;
+  async function fetchtest() {
+    const recipes = await (
+      await fetch(`https://api.api-ninjas.com/v1/recipe?query=""&offset=${i}`, {
+        headers,
+      })
+    ).json();
+
     recipeContainer.innerHTML = recipes
       .map(
         (recipe) =>
@@ -16,16 +22,19 @@ document.addEventListener("DOMContentLoaded", async () => {
           )}">${recipe.title}</a></h2></div>`
       )
       .join("");
-  };
+  }
 
-  displayRecipes(recipes);
+  fetchtest();
 
-  searchInput.addEventListener("input", (event) => {
-    const searchTerm = event.target.value.toLowerCase();
-    displayRecipes(
-      recipes.filter((recipe) =>
-        recipe.title.toLowerCase().includes(searchTerm)
-      )
-    );
-  });
+  document.getElementById("btn").addEventListener("click", next_page);
+  function next_page() {
+    i += 10;
+    fetchtest();
+  }
+
+  document.getElementById("btnlast").addEventListener("click", last_page);
+  function last_page() {
+    i -= 10;
+    fetchtest();
+  }
 });

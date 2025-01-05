@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO+Guides&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap"
+        rel="stylesheet">
     <title>Recipe App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,12 +18,21 @@
 <body>
     <header>
         <h1>Recepten boek</h1>
-        <input type="text" class="search-input" placeholder="zoek voor gerechten">
+        <input type="text" class="search-input" id="serch" placeholder="zoek voor gerechten">
     </header>
     <main>
         <div class="recipe-container"></div>
+
+
+        <div class="button-container">
+            <button class="page-button" id="btnlast">Last page</button>
+            <button class="page-button" id="btn">Next page</button>
+        </div>
     </main>
-    <script src="main.js"></script>
+
+
 </body>
 
 </html>
+
+<script src="main.js"></script>
