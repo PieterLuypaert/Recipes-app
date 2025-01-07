@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const headers = { "X-Api-Key": apiKey };
 
   const recipeContainer = document.querySelector(".recipe-container");
-  const searchInput = document.querySelector(".search-input");
 
   let i = 0;
   async function fetchtest() {
@@ -14,14 +13,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       })
     ).json();
 
-    recipeContainer.innerHTML = recipes
-      .map(
-        (recipe) =>
-          `<div class="recipe"><h2><a href="secondpage.html?title=${encodeURIComponent(
-            recipe.title
-          )}">${recipe.title}</a></h2></div>`
-      )
-      .join("");
+    let recipeHTML = "";
+    recipes.forEach((recipe) => {
+      recipeHTML += `<div class="recipe"><h2><a href="secondpage.html?title=${encodeURIComponent(
+        recipe.title
+      )}">${recipe.title}</a></h2></div>`;
+    });
+    recipeContainer.innerHTML = recipeHTML;
   }
 
   fetchtest();
@@ -37,4 +35,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     i -= 10;
     fetchtest();
   }
+
+  // dit is mijn black en white filter
+
+  const toggleModeButton = document.getElementById("toggle-mode");
+  const currentMode = localStorage.getItem("mode");
+
+  if (currentMode === "black-and-white") {
+    document.body.classList.add("black-and-white");
+  }
+
+  toggleModeButton.addEventListener("click", () => {
+    document.body.classList.toggle("black-and-white");
+    if (document.body.classList.contains("black-and-white")) {
+      localStorage.setItem("mode", "black-and-white");
+    } else {
+      localStorage.removeItem("mode");
+    }
+  });
 });

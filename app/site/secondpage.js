@@ -1,28 +1,17 @@
-document.addEventListener("DOMContentLoaded", async () => {
-  const apiKey = "mz/qZWo1J4weMMk9ZaAUrg==xuJ3PaZYRZ5yPdni";
-  const apiUrl = `https://api.api-ninjas.com/v1/recipe?title=`;
-  const headers = { "X-Api-Key": apiKey };
+//dit is mijn black en white filter
 
-  const recipeDetailsContainer = document.querySelector(".recipe-details");
-  const urlParams = new URLSearchParams(window.location.search);
-  const recipeTitle = urlParams.get("title");
+const toggleModeButton = document.getElementById("toggle-mode");
+const currentMode = localStorage.getItem("mode");
 
-  if (recipeTitle) {
-    const recipe = await (
-      await fetch(apiUrl + encodeURIComponent(recipeTitle), { headers })
-    ).json();
+if (currentMode === "black-and-white") {
+  document.body.classList.add("black-and-white");
+}
 
-    if (recipe.length > 0) {
-      const details = recipe[0];
-      recipeDetailsContainer.innerHTML = `
-        <h1>${details.title}</h1>
-        <p><strong>Ingredients:</strong> ${details.ingredients}</p>
-        <p><strong>Instructions:</strong> ${details.instructions}</p>
-      `;
-    } else {
-      recipeDetailsContainer.innerHTML = "<p>Recipe not found.</p>";
-    }
+toggleModeButton.addEventListener("click", () => {
+  document.body.classList.toggle("black-and-white");
+  if (document.body.classList.contains("black-and-white")) {
+    localStorage.setItem("mode", "black-and-white");
   } else {
-    recipeDetailsContainer.innerHTML = "<p>No recipe title provided.</p>";
+    localStorage.removeItem("mode");
   }
 });

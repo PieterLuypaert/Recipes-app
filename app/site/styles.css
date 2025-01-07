@@ -116,3 +116,51 @@ button {
 .page-button {
   padding: 50px;
 }
+
+body.black-and-white {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.black-and-white header {
+  background: #333;
+  color: #f0f0f0;
+}
+
+body.black-and-white .recipe,
+body.black-and-white .recipe-details {
+  background: #fff;
+  color: #333; 
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.black-and-white button {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.black-and-white button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+body.black-and-white .search-input {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+}
+
+body.black-and-white .page-button {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.black-and-white .page-button:hover {
+  background-color: #555;
+  color: #fff;
+}
