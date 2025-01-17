@@ -23,7 +23,7 @@
     ],
     "instructions": "Kook de spaghetti en bak het spek. Meng de eieren en kaas. Giet de saus over de spaghetti en meng met spek.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 2
   },
   {
@@ -50,7 +50,7 @@
     ],
     "instructions": "Fruit de ui en wortel. Voeg de tomaten en bouillon toe. Laat koken en pureer.",
     "cookingTime": 30,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Moeilijk ★★★",
     "servings": 4
   },
   {
@@ -77,7 +77,7 @@
     ],
     "instructions": "Bak de kip en voeg de currypasta toe. Giet de kokosmelk erbij en laat sudderen. Serveer met rijst.",
     "cookingTime": 40,
-    "difficulty": "Gemiddeld",
+    "difficulty": "Gemiddeld ★★",
     "servings": 4
   },
   {
@@ -104,7 +104,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -131,7 +131,7 @@
     ],
     "instructions": "Kook de aardappelen gaar. Stamp ze fijn met melk en boter. Breng op smaak met nootmuskaat.",
     "cookingTime": 30,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -158,7 +158,7 @@
     ],
     "instructions": "Bak de kip in olie. Breng op smaak met zout en peper.",
     "cookingTime": 15,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 2
   },
   {
@@ -185,7 +185,7 @@
     ],
     "instructions": "Meng bloem, boter en suiker. Voeg gember toe en meng goed door. Bak in de oven.",
     "cookingTime": 30,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 6
   },
   {
@@ -212,7 +212,7 @@
     ],
     "instructions": "Snij de kip en avocado in kleine stukjes. Meng met sla en azijn.",
     "cookingTime": 10,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -239,7 +239,7 @@
     ],
     "instructions": "Meng yoghurt, knoflook en coriander. Mariner de kip in dit mengsel.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -262,7 +262,7 @@
     ],
     "instructions": "Kook de spaghetti. Meng met tomaatensaus en kaas.",
     "cookingTime": 15,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 2
   },
   {
@@ -285,7 +285,7 @@
     ],
     "instructions": "Rook de aubergine in de oven. Breng op smaak met zout en peper.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -308,7 +308,7 @@
     ],
     "instructions": "Snij de kool en selderij in kleine stukjes. Meng met azijn.",
     "cookingTime": 10,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -327,7 +327,7 @@
     ],
     "instructions": "Kook de spaghetti. Meng met pesto.",
     "cookingTime": 15,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 2
   },
   {
@@ -346,7 +346,7 @@
     ],
     "instructions": "Rook de paprika in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -365,7 +365,7 @@
     ],
     "instructions": "Bak de kip en aardappelen in de oven.",
     "cookingTime": 30,
-    "difficulty": "Gemiddeld",
+    "difficulty": "Gemiddeld ★★",
     "servings": 4
   },
   {
@@ -396,7 +396,7 @@
     ],
     "instructions": "Meng bloem, boter en suiker. Voeg gember toe en meng goed door. Bak in de oven.",
     "cookingTime": 30,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 6
   },
   {
@@ -419,7 +419,7 @@
     ],
     "instructions": "Bak de kip en ui in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -450,7 +450,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -469,7 +469,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -492,7 +492,7 @@
     ],
     "instructions": "Kook de spaghetti. Meng met tomaatensaus en kaas.",
     "cookingTime": 15,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 2
   },
   {
@@ -511,7 +511,7 @@
     ],
     "instructions": "Rook de peultjes in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -534,7 +534,7 @@
     ],
     "instructions": "Bak de kip, aardappelen en ui in de oven.",
     "cookingTime": 30,
-    "difficulty": "Gemiddeld",
+    "difficulty": "Gemiddeld ★★",
     "servings": 4
   },
   {
@@ -553,7 +553,7 @@
     ],
     "instructions": "Rook de courgette in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -576,7 +576,7 @@
     ],
     "instructions": "Bak de kip en selderij in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -607,7 +607,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -626,7 +626,7 @@
     ],
     "instructions": "Rook de champignons in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -649,7 +649,7 @@
     ],
     "instructions": "Bak de kip en ui in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -680,7 +680,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -699,7 +699,7 @@
     ],
     "instructions": "Rook de wortelen in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -722,7 +722,7 @@
     ],
     "instructions": "Bak de kip en champignons in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -753,7 +753,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -772,7 +772,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -795,7 +795,7 @@
     ],
     "instructions": "Bak de kip en champignons in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -826,7 +826,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -845,7 +845,7 @@
     ],
     "instructions": "Rook de spruitjes in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -868,7 +868,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -899,7 +899,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -918,7 +918,7 @@
     ],
     "instructions": "Rook de aubergine in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -941,7 +941,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -972,7 +972,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -991,7 +991,7 @@
     ],
     "instructions": "Rook de sperziebonen in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -1014,7 +1014,7 @@
     ],
     "instructions": "Bak de kip en sperziebonen in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -1045,7 +1045,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 3
   },
   {
@@ -1064,7 +1064,7 @@
     ],
     "instructions": "Rook de courgette in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1087,7 +1087,7 @@
     ],
     "instructions": "Bak de kip en sperziebonen in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1118,7 +1118,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1137,7 +1137,7 @@
     ],
     "instructions": "Rook de paprika in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1160,7 +1160,7 @@
     ],
     "instructions": "Bak de kip en paprika in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1191,7 +1191,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1210,7 +1210,7 @@
     ],
     "instructions": "Rook de wortelen in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1233,7 +1233,7 @@
     ],
     "instructions": "Bak de kip en paprika in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1264,7 +1264,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1283,7 +1283,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1306,7 +1306,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1337,7 +1337,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1356,7 +1356,7 @@
     ],
     "instructions": "Rook de ui in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1379,7 +1379,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1410,7 +1410,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1429,7 +1429,7 @@
     ],
     "instructions": "Rook de wortel in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1452,7 +1452,7 @@
     ],
     "instructions": "Bak de kip en wortel in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1483,7 +1483,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1502,7 +1502,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemiddeld",
+    "difficulty": "Gemiddeld ★★",
     "servings": 4
   },
   {
@@ -1525,7 +1525,7 @@
     ],
     "instructions": "Bak de kip en wortel in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1556,7 +1556,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1575,7 +1575,7 @@
     ],
     "instructions": "Rook de ui in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1598,7 +1598,7 @@
     ],
     "instructions": "Bak de kip en ui in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1629,7 +1629,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1648,7 +1648,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemiddeld",
+    "difficulty": "Gemiddeld ★★",
     "servings": 4
   },
   {
@@ -1671,7 +1671,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1702,7 +1702,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemiddeld",
+    "difficulty": "Gemiddeld ★★",
     "servings": 4
   },
   {
@@ -1721,7 +1721,7 @@
     ],
     "instructions": "Rook de ui in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1744,7 +1744,7 @@
     ],
     "instructions": "Bak de kip en ui in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1775,7 +1775,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Moeilijk",
+    "difficulty": "Moeilijk ★★★",
     "servings": 4
   },
   {
@@ -1794,7 +1794,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1817,7 +1817,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1848,7 +1848,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1867,7 +1867,7 @@
     ],
     "instructions": "Rook de ui in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Moeilijk",
+    "difficulty": "Moeilijk ★★★",
     "servings": 4
   },
   {
@@ -1890,7 +1890,7 @@
     ],
     "instructions": "Bak de kip en ui in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1921,7 +1921,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1940,7 +1940,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1963,7 +1963,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -1994,7 +1994,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2013,7 +2013,7 @@
     ],
     "instructions": "Rook de ui in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2036,7 +2036,7 @@
     ],
     "instructions": "Bak de kip en ui in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2067,7 +2067,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2086,7 +2086,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2109,7 +2109,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2140,7 +2140,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2159,7 +2159,7 @@
     ],
     "instructions": "Rook de ui in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2182,7 +2182,7 @@
     ],
     "instructions": "Bak de kip en ui in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2213,7 +2213,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2232,7 +2232,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2255,7 +2255,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2286,7 +2286,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2305,7 +2305,7 @@
     ],
     "instructions": "Rook de ui in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2328,7 +2328,7 @@
     ],
     "instructions": "Bak de kip en ui in olie. Breng op smaak met knoflook.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2359,7 +2359,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2378,7 +2378,7 @@
     ],
     "instructions": "Rook de broccoli in de oven. Breng op smaak met zout.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2401,7 +2401,7 @@
     ],
     "instructions": "Bak de kip en broccoli in olie. Breng op smaak met tomaatensaus.",
     "cookingTime": 20,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   },
   {
@@ -2432,7 +2432,7 @@
     ],
     "instructions": "Meng bloem, melk en eieren tot een beslag. Bak de pannenkoeken in boter.",
     "cookingTime": 25,
-    "difficulty": "Gemakkelijk",
+    "difficulty": "Gemakkelijk ★",
     "servings": 4
   }
 ]
