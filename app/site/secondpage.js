@@ -16,6 +16,7 @@ toggleModeButton.addEventListener("click", () => {
   }
 });
 
+// fetcht details op de secondpage
 const apiUrl = `http://localhost:3000`;
 
 async function fetchRecipeDetails() {
