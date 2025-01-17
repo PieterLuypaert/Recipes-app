@@ -9,11 +9,11 @@ const {
   deletePost,
 } = require("../controllers/postControllers.js");
 
-postRouter.get("/posts", (req, res) => getPosts(req, res));
-postRouter.get("/posts/:postId", getPost);
+postRouter.get("/recipes", (req, res) => getPosts(req, res));
+postRouter.get("/recipes/:postId", getPost);
 
-postRouter.post("/posts", createPost);
+postRouter.post("/recipes", createPost);
 
-postRouter.delete("/posts/:id", deletePost);
+postRouter.delete("/recipes/:id", deletePost);
 
 module.exports = postRouter;

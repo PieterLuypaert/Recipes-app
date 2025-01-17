@@ -2,7 +2,7 @@ const path = require("path");
 const fsp = require("fs/promises");
 const { generateUUID } = require("../helpers/utils");
 
-const postPath = path.join(__dirname, "..", "data", "posts.json");
+const postPath = path.join(__dirname, "..", "data", "recipes.json");
 
 async function getDataFromFile() {
   const data = await fsp.readFile(postPath, "utf8");
