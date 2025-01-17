@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const apiKey = "mz/qZWo1J4weMMk9ZaAUrg==xuJ3PaZYRZ5yPdni";
-  const apiUrl = `https://api.api-ninjas.com/v1/recipe?limit=100`;
-  const headers = { "X-Api-Key": apiKey };
+  const apiUrl = `http://localhost:3000`;
 
   const recipeContainer = document.querySelector(".recipe-container");
 
   let i = 0;
   async function fetchtest() {
     const recipes = await (
-      await fetch(`https://api.api-ninjas.com/v1/recipe?query=""&offset=${i}`, {
-        headers,
+      await fetch(`${apiUrl}/recipes?query=""&offset=${i}`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
     ).json();
 
