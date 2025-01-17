@@ -1,3 +1,7 @@
+
+
+
+
 //dit is mijn black en white filter
 
 const toggleModeButton = document.getElementById("toggle-mode");
