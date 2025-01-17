@@ -32,12 +32,19 @@ async function fetchRecipeDetails() {
     const recipe = recipes.find((r) => r.title === title);
     if (!recipe) throw new Error("Recipe not found");
 
+    const ingredientsList = document.createElement("ul");
+    recipe.ingredients.forEach((ing) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = `${ing.name}: ${ing.amount}`;
+      ingredientsList.appendChild(listItem);
+    });
+
     document.querySelector(".recipe-details").innerHTML = `
       <h2>${recipe.title}</h2>
       <p>${recipe.instructions}</p>
-      <ul>${recipe.ingredients
-        .map((ing) => `<li>${ing.name}: ${ing.amount}</li>`)
-        .join("")}</ul>
+    `;
+    document.querySelector(".recipe-details").appendChild(ingredientsList);
+    document.querySelector(".recipe-details").innerHTML += `
       <p>Cooking Time: ${recipe.cookingTime} minutes</p>
       <p>Difficulty: ${recipe.difficulty}</p>
       <p>Servings: ${recipe.servings}</p>
