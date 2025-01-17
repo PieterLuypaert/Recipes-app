@@ -19,9 +19,7 @@ async function fetchtest() {
     recipes.forEach((recipe) => {
       recipeHTML += `<div class="recipe"><h2><a href="secondpage.html?title=${encodeURIComponent(
         recipe.title
-      )}">${recipe.title}</a></h2><p>${
-        recipe.difficulty
-      }</p></div>`;
+      )}">${recipe.title}</a></h2><p>${recipe.difficulty}</p></div>`;
     });
     recipeContainer.innerHTML = recipeHTML;
   } catch (error) {
@@ -30,8 +28,6 @@ async function fetchtest() {
 }
 
 fetchtest();
-
-
 
 // dit is mijn black en white filter
 

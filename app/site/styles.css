@@ -130,7 +130,7 @@ body.black-and-white header {
 body.black-and-white .recipe,
 body.black-and-white .recipe-details {
   background: #fff;
-  color: #333; 
+  color: #333;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
