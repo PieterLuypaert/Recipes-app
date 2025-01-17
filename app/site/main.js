@@ -5,36 +5,30 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let i = 0;
   async function fetchtest() {
-    const recipes = await (
-      await fetch(`${apiUrl}/recipes?query=""&offset=${i}`, {
+    try {
+      const response = await fetch(`${apiUrl}/recipes?query=""&offset=${i}`, {
         headers: {
           "Content-Type": "application/json",
         },
-      })
-    ).json();
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const recipes = await response.json();
 
-    let recipeHTML = "";
-    recipes.forEach((recipe) => {
-      recipeHTML += `<div class="recipe"><h2><a href="secondpage.html?title=${encodeURIComponent(
-        recipe.title
-      )}">${recipe.title}</a></h2></div>`;
-    });
-    recipeContainer.innerHTML = recipeHTML;
+      let recipeHTML = "";
+      recipes.forEach((recipe) => {
+        recipeHTML += `<div class="recipe"><h2><a href="secondpage.html?title=${encodeURIComponent(
+          recipe.title
+        )}">${recipe.title}</a></h2></div>`;
+      });
+      recipeContainer.innerHTML = recipeHTML;
+    } catch (error) {
+      console.error("Failed to fetch recipes:", error);
+    }
   }
 
   fetchtest();
-
-  document.getElementById("btn").addEventListener("click", next_page);
-  function next_page() {
-    i += 10;
-    fetchtest();
-  }
-
-  document.getElementById("btnlast").addEventListener("click", last_page);
-  function last_page() {
-    i -= 10;
-    fetchtest();
-  }
 
   // dit is mijn black en white filter
 
