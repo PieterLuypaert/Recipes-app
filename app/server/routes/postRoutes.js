@@ -7,7 +7,7 @@ const {
   getPost,
   createPost,
   deletePost,
-} = require("../controllers/postController.js");
+} = require("../controllers/postControllers.js");
 
 postRouter.get("/posts", (req, res) => getPosts(req, res));
 postRouter.get("/posts/:postId", getPost);
