@@ -17,9 +17,11 @@ async function fetchtest() {
 
     let recipeHTML = "";
     recipes.forEach((recipe) => {
-      recipeHTML += `<div class="recipe"><h2><a href="secondpage.html?title=${encodeURIComponent(
-        recipe.title
-      )}">${recipe.title}</a></h2><p>${recipe.difficulty}</p></div>`;
+      recipeHTML += `<div class="recipe">
+        <h2><a href="secondpage.html?title=${encodeURIComponent(recipe.title)}">${recipe.title}</a></h2>
+        <p>${recipe.difficulty}</p>
+        <button class="delete-recipe" data-id="${recipe.id}">Verwijder</button>
+      </div>`;
     });
     recipeContainer.innerHTML = recipeHTML;
   } catch (error) {
@@ -28,6 +30,30 @@ async function fetchtest() {
 }
 
 fetchtest();
+
+recipeContainer.addEventListener("click", async (event) => {
+  if (event.target.classList.contains("delete-recipe")) {
+    const recipeId = event.target.getAttribute("data-id");
+
+    try {
+      const response = await fetch(`${apiUrl}/recipes/${recipeId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to delete recipe");
+      }
+
+      console.log(`Deleted recipe with ID: ${recipeId}`);
+      event.target.closest(".recipe").remove();
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+});
 
 // dit is mijn black en white filter
 
