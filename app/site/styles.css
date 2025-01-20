@@ -164,3 +164,92 @@ body.black-and-white .page-button:hover {
   background-color: #555;
   color: #fff;
 }
+
+form#add-recipe-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+form.add-recipe-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form.add-recipe-form input,
+form.add-recipe-form textarea,
+form.add-recipe-form button {
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form.add-recipe-form input:focus,
+form.add-recipe-form textarea:focus,
+form.add-recipe-form button:focus {
+  outline: none;
+  border-color: #ff7e5f;
+}
+
+form.add-recipe-form button {
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form.add-recipe-form button:hover {
+  background-color: #feb47b;
+}
+
+form h1 {
+  text-align: center;
+}
+
+#message {
+  display: none;
+  color: black;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+select#difficulty {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select#difficulty:focus {
+  outline: none;
+  border-color: #ff7e5f;
+}
+
+select#difficulty option {
+  font-size: 1rem;
+  padding: 1rem;
+}

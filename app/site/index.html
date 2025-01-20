@@ -28,11 +28,30 @@
     <main>
         <div class="recipe-container"></div>
 
-
         <div class="button-container">
-
+            <form class="add-recipe-form">
+                <h1>Gerecht toevoegen</h1>
+                <input type="text" id="title" placeholder="Titel" required>
+                <input type="text" id="category" placeholder="Categorie" required>
+                <textarea id="ingredients" placeholder="Ingrediënten" required></textarea>
+                <textarea id="instructions" placeholder="Instructies" required></textarea>
+                <input type="number" id="cookingTime" placeholder="Kooktijd (minuten)" required>
+                <select id="difficulty" required>
+                    <option value="" disabled selected>Selecteer moeilijkheid</option>
+                    <option value="Gemakkelijk ★">Gemakkelijk ★</option>
+                    <option value="Gemiddeld ★★">Gemiddeld ★★</option>
+                    <option value="Moeilijk ★★★">Moeilijk ★★★</option>
+                </select>
+                <input type="number" id="servings" placeholder="Porties" required>
+                <button type="submit">Voeg recept toe</button>
+            </form>
+            <div id="message">Recept succesvol toegevoegd</div>
         </div>
     </main>
+
+    <footer>
+        <p>Dev by Pieter Luypaert</p>
+    </footer>
 
     <script src="main.js"></script>
     <script src="addreceipt.js"></script>
