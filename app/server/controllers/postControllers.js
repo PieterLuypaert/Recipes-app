@@ -65,11 +65,15 @@ async function deletePost(req, res) {
     message: `We hebben post met id ${id} verwijderd.`,
   });
 }
-
 async function getCategories(req, res) {
   try {
     const posts = await getDataFromFile();
-    const categories = [...new Set(posts.map(post => post.category))];
+    const categories = [];
+    posts.forEach(post => {
+      if (!categories.includes(post.category)) {
+        categories.push(post.category);
+      }
+    });
     res.json(categories);
   } catch (error) {
     res.status(500).json(error);
@@ -79,7 +83,14 @@ async function getCategories(req, res) {
 async function getIngredients(req, res) {
   try {
     const posts = await getDataFromFile();
-    const ingredients = [...new Set(posts.flatMap(post => post.ingredients.map(ingredient => ingredient.name)))];
+    const ingredients = [];
+    posts.forEach(post => {
+      post.ingredients.forEach(ingredient => {
+        if (!ingredients.includes(ingredient.name)) {
+          ingredients.push(ingredient.name);
+        }
+      });
+    });
     res.json(ingredients);
   } catch (error) {
     res.status(500).json(error);
@@ -89,7 +100,12 @@ async function getIngredients(req, res) {
 async function getDifficultyLevels(req, res) {
   try {
     const posts = await getDataFromFile();
-    const difficultyLevels = [...new Set(posts.map(post => post.difficulty))];
+    const difficultyLevels = [];
+    posts.forEach(post => {
+      if (!difficultyLevels.includes(post.difficulty)) {
+        difficultyLevels.push(post.difficulty);
+      }
+    });
     res.json(difficultyLevels);
   } catch (error) {
     res.status(500).json(error);
