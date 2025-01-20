@@ -72,3 +72,4 @@ toggleModeButton.addEventListener("click", () => {
     localStorage.removeItem("mode");
   }
 });
+

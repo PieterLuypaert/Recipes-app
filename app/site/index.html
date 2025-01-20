@@ -18,29 +18,25 @@
 <body>
     <header>
         <h1>Recepten boek</h1>
-        <input type="text" class="search-input" id="serch" placeholder="zoek voor gerechten">
+        <input type="text" class="search-input" id="search" placeholder="zoek voor gerechten">
         <div class="header-buttons">
             <button id="toggle-mode">Black and White Mode</button>
         </div>
     </header>
 
     <main>
-        <div class="recipe-container"></div>
+        <div class="recipe-container" id="recipe-container"></div>
 
         <div class="button-container">
             <form class="add-recipe-form">
-                <h1>Gerecht toevoegen</h1>
+                <h1>Recept toevoegen</h1>
                 <input type="text" id="title" placeholder="Titel" required>
                 <input type="text" id="category" placeholder="Categorie" required>
-                <textarea id="ingredients" placeholder="Ingrediënten" required></textarea>
+                <textarea id="ingredients" placeholder="Ingrediënten (naam: hoeveelheid, gescheiden door komma's)"
+                    required></textarea>
                 <textarea id="instructions" placeholder="Instructies" required></textarea>
                 <input type="number" id="cookingTime" placeholder="Kooktijd (minuten)" required>
-                <select id="difficulty" required>
-                    <option value="" disabled selected>Selecteer moeilijkheid</option>
-                    <option value="Gemakkelijk ★">Gemakkelijk ★</option>
-                    <option value="Gemiddeld ★★">Gemiddeld ★★</option>
-                    <option value="Moeilijk ★★★">Moeilijk ★★★</option>
-                </select>
+                <input type="text" id="difficulty" placeholder="Moeilijkheid" required>
                 <input type="number" id="servings" placeholder="Porties" required>
                 <button type="submit">Voeg recept toe</button>
             </form>
@@ -54,6 +50,8 @@
 
     <script src="main.js"></script>
     <script src="addreceipt.js"></script>
+    <script src="searchbar.js"></script>
+
 
 </body>
 
