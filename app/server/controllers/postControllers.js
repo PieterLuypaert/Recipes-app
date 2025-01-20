@@ -55,19 +55,25 @@ async function createPost(req, res) {
 }
 
 async function deletePost(req, res) {
-  //1. data ophalen
-
   const { id } = req.params;
 
   const posts = await getDataFromFile();
-  //2. filteren op basis van id
   const updatedPosts = posts.filter((post) => post.id !== id);
-  //3. write to file
   await writeDataToFile(postPath, updatedPosts);
-  //4. response "Het is gelukt"
+
   res.json({
     message: `We hebben post met id ${id} verwijderd.`,
   });
+}
+
+async function getCategories(req, res) {
+  try {
+    const posts = await getDataFromFile();
+    const categories = [...new Set(posts.map(post => post.category))];
+    res.json(categories);
+  } catch (error) {
+    res.status(500).json(error);
+  }
 }
 
 module.exports = {
@@ -75,4 +81,5 @@ module.exports = {
   getPost,
   createPost,
   deletePost,
+  getCategories, 
 };
