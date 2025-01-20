@@ -7,7 +7,8 @@ const {
   getPost,
   createPost,
   deletePost,
-  getCategories, // Voeg deze regel toe
+  getCategories,
+  getIngredients,
 } = require("../controllers/postControllers.js");
 
 postRouter.get("/recipes", (req, res) => getPosts(req, res));
@@ -17,6 +18,7 @@ postRouter.post("/recipes", createPost);
 
 postRouter.delete("/recipes/:id", deletePost);
 
-postRouter.get("/categories", getCategories); // Voeg deze regel toe
+postRouter.get("/categories", getCategories);
+postRouter.get("/ingredients", getIngredients); 
 
 module.exports = postRouter;

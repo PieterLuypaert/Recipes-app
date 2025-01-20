@@ -76,10 +76,21 @@ async function getCategories(req, res) {
   }
 }
 
+async function getIngredients(req, res) {
+  try {
+    const posts = await getDataFromFile();
+    const ingredients = [...new Set(posts.flatMap(post => post.ingredients.map(ingredient => ingredient.name)))];
+    res.json(ingredients);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+}
+
 module.exports = {
   getPosts,
   getPost,
   createPost,
   deletePost,
-  getCategories, 
+  getCategories,
+  getIngredients, // Voeg deze regel toe
 };

@@ -256,10 +256,9 @@ select#difficulty option {
 
 .category {
   background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  border-radius: 10px; /* Increased border-radius for smoother corners */
+  border-radius: 10px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -270,13 +269,49 @@ select#difficulty option {
   margin: 0;
   font-size: 1.5rem;
   color: #333;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   display: inline-block;
 }
 
-.category:hover {
-  transform: translateY(-2px); /* Added slight lift effect on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for better depth */
+
+.ingredient {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.ingredient h2 {
+  font-family: "Playwrite CO Guides", serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.view-buttons {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px; 
+}
+
+.view-buttons button {
+
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff7e5f;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.view-buttons button:hover {
+  background-color: #feb47b;
 }
