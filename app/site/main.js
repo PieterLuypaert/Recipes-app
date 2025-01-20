@@ -33,7 +33,6 @@ async function fetchtest() {
 
 fetchtest();
 
-
 // dit is mijn black en white filter
 
 const toggleModeButton = document.getElementById("toggle-mode");
@@ -52,8 +51,10 @@ toggleModeButton.addEventListener("click", () => {
   }
 });
 
+const form = document.getElementById("add-recipe-form");
+form.style.display = "none";
+
 document.getElementById("toggle-form").addEventListener("click", () => {
-  const form = document.getElementById("add-recipe-form");
   const toggleButton = document.getElementById("toggle-form");
 
   if (form.style.display === "none" || form.style.display === "") {

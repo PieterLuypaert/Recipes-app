@@ -44,8 +44,8 @@ main {
 
 .recipe-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 1.5rem; /* Space between items */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1.5rem; 
 }
 
 .recipe,
@@ -335,8 +335,7 @@ footer {
 .ingredient {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensure even spacing */
-  /* ...existing code... */
+  justify-content: space-between; 
 }
 
 .toggle-button {
@@ -352,4 +351,32 @@ footer {
 
 .toggle-button:hover {
   color: #feb47b;
+}
+
+.difficulty,
+.ingredient {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.difficulty h2,
+.ingredient h2 {
+  font-family: "Playwrite CO Guides", serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.difficulty:hover,
+.ingredient:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
