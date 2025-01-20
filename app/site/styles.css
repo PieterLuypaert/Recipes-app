@@ -283,6 +283,7 @@ select#difficulty option {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   display: inline-block;
+  text-align: center;
 }
 
 .ingredient {
@@ -303,6 +304,7 @@ select#difficulty option {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   display: inline-block;
+  text-align: center;
 }
 
 .view-buttons {
@@ -361,6 +363,7 @@ footer {
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  text-align: center;
 }
 
 .difficulty h2,
