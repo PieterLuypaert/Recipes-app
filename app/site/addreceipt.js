@@ -40,12 +40,10 @@ document.querySelector(".add-recipe-form").addEventListener("submit", async (eve
         const result = await response.json();
         console.log(result.message);
 
-        // Toon het succesbericht
         const messageElement = document.getElementById("message");
         messageElement.style.display = "block";
         messageElement.textContent = "Recept succesvol toegevoegd";
 
-        // Optioneel: Voeg logica toe om het formulier te resetten en de receptenlijst bij te werken
     } catch (error) {
         console.error("Error:", error);
     }
