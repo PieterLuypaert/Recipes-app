@@ -47,6 +47,9 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
+.recipe h2{
+  text-align: center;
+}
 
 .recipe,
 .recipe-details {
@@ -381,4 +384,8 @@ footer {
 h1 a {
   text-decoration: none;
   color: white;
+}
+
+.recipe-container p {
+  text-align: center;
 }
