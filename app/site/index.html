@@ -28,16 +28,17 @@
     <div class="view-buttons">
         <button id="view-categories">Categorieën</button>
         <button id="view-ingredients">Ingrediënten</button>
+        <button id="view-difficulty">difficulty</button>
     </div>
     <main>
         <div class="recipe-container" id="recipe-container"></div>
         <div class="button-container">
-            <form class="add-recipe-form">
+            <button class="toggle-button" id="toggle-form">klik hier om het formulier te verbergen</button>
+            <form class="add-recipe-form" id="add-recipe-form">
                 <h1>Recept toevoegen</h1>
                 <input type="text" id="title" placeholder="Titel" required>
                 <input type="text" id="category" placeholder="Categorie" required>
-                <textarea id="ingredients" placeholder="Ingrediënten (naam: hoeveelheid, gescheiden door komma's)"
-                    required></textarea>
+                <textarea id="ingredients" placeholder="Ingrediënten" required></textarea>
                 <textarea id="instructions" placeholder="Instructies" required></textarea>
                 <input type="number" id="cookingTime" placeholder="Kooktijd (minuten)" required>
                 <input type="text" id="difficulty" placeholder="Moeilijkheid" required>
@@ -57,9 +58,7 @@
     <script src="searchbar.js"></script>
     <script src="category.js"></script>
     <script src="ingredients.js"></script>
-
-
-
+    <script src="difficulty.js"></script>
 </body>
 
 </html>

@@ -18,7 +18,9 @@ async function fetchtest() {
     let recipeHTML = "";
     recipes.forEach((recipe) => {
       recipeHTML += `<div class="recipe">
-        <h2><a href="secondpage.html?title=${encodeURIComponent(recipe.title)}">${recipe.title}</a></h2>
+        <h2><a href="secondpage.html?title=${encodeURIComponent(
+          recipe.title
+        )}">${recipe.title}</a></h2>
         <p>${recipe.difficulty}</p>
         <button class="delete-recipe" data-id="${recipe.id}">Verwijder</button>
       </div>`;
@@ -73,3 +75,15 @@ toggleModeButton.addEventListener("click", () => {
   }
 });
 
+document.getElementById("toggle-form").addEventListener("click", () => {
+  const form = document.getElementById("add-recipe-form");
+  const toggleButton = document.getElementById("toggle-form");
+
+  if (form.style.display === "none" || form.style.display === "") {
+    form.style.display = "block";
+    toggleButton.textContent = "klik hier om het formulier te verbergen";
+  } else {
+    form.style.display = "none";
+    toggleButton.textContent = "klik hier om een gerecht toe te voegen!";
+  }
+});

@@ -86,11 +86,22 @@ async function getIngredients(req, res) {
   }
 }
 
+async function getDifficultyLevels(req, res) {
+  try {
+    const posts = await getDataFromFile();
+    const difficultyLevels = [...new Set(posts.map(post => post.difficulty))];
+    res.json(difficultyLevels);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+}
+
 module.exports = {
   getPosts,
   getPost,
   createPost,
   deletePost,
   getCategories,
-  getIngredients, // Voeg deze regel toe
+  getIngredients,
+  getDifficultyLevels, 
 };
