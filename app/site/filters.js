@@ -1,3 +1,4 @@
+
 // ========= Filter voor ingredienten =========
 
 document
@@ -7,7 +8,6 @@ document
 
     try {
       const response = await fetch("http://localhost:3000/ingredients");
-      if (!response.ok) throw new Error("Failed to fetch ingredients");
 
       const ingredients = await response.json();
       recipeContainer.innerHTML = ingredients
@@ -29,7 +29,6 @@ async function viewIngredient(ingredient) {
 
   try {
     const response = await fetch("http://localhost:3000/recipes");
-    if (!response.ok) throw new Error("Failed to fetch recipes");
 
     const recipes = await response.json();
     const filteredRecipes = recipes.filter((recipe) =>
@@ -57,7 +56,6 @@ document.getElementById("view-difficulty").addEventListener("click", async () =>
 
     try {
       const response = await fetch("http://localhost:3000/difficulty-levels");
-      if (!response.ok) throw new Error("Failed to fetch difficulty levels");
 
       const difficultyLevels = await response.json();
       recipeContainer.innerHTML = difficultyLevels
@@ -78,7 +76,6 @@ async function viewDifficulty(difficulty) {
 
   try {
     const response = await fetch("http://localhost:3000/recipes");
-    if (!response.ok) throw new Error("Failed to fetch recipes");
 
     const recipes = await response.json();
     const filteredRecipes = recipes.filter(
@@ -108,7 +105,6 @@ document
 
     try {
       const response = await fetch("http://localhost:3000/categories");
-      if (!response.ok) throw new Error("Failed to fetch categories");
 
       const categories = await response.json();
       recipeContainer.innerHTML = categories
@@ -130,7 +126,6 @@ async function viewCategory(category) {
 
   try {
     const response = await fetch("http://localhost:3000/recipes");
-    if (!response.ok) throw new Error("Failed to fetch recipes");
 
     const recipes = await response.json();
     const filteredRecipes = recipes.filter(

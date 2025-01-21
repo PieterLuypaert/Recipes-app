@@ -22,7 +22,6 @@ async function fetchtest() {
         <h2><a href="secondpage.html?title=${encodeURIComponent(
           recipe.title
         )}">${recipe.title}</a></h2>
-        <p>${recipe.difficulty}</p>
         <button class="delete-recipe" data-id="${recipe.id}">Verwijder</button>
       </div>`;
     });
