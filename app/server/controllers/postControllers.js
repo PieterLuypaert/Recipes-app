@@ -23,7 +23,7 @@ async function getPosts(req, res) {
   }
 }
 
-async function getPost(req, res) {
+async function getRecipe(req, res) {
   try {
     const posts = await getDataFromFile();
     const { postId } = req.params;
@@ -38,7 +38,7 @@ async function getPost(req, res) {
   }
 }
 
-async function createPost(req, res) {
+async function createRecipe(req, res) {
   try {
     const posts = await getDataFromFile();
     posts.push({
@@ -54,7 +54,7 @@ async function createPost(req, res) {
   }
 }
 
-async function deletePost(req, res) {
+async function deleteRecipe(req, res) {
   const { id } = req.params;
 
   const posts = await getDataFromFile();
@@ -114,9 +114,9 @@ async function getDifficultyLevels(req, res) {
 
 module.exports = {
   getPosts,
-  getPost,
-  createPost,
-  deletePost,
+  getRecipe,
+  createRecipe,
+  deleteRecipe,
   getCategories,
   getIngredients,
   getDifficultyLevels, 
