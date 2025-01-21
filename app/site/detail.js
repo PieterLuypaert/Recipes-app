@@ -1,22 +1,6 @@
-//dit is mijn black en white filter
 
-const toggleModeButton = document.getElementById("toggle-mode");
-const currentMode = localStorage.getItem("mode");
+// ======= Fetcht de gerchten op de detail ====== 
 
-if (currentMode === "black-and-white") {
-  document.body.classList.add("black-and-white");
-}
-
-toggleModeButton.addEventListener("click", () => {
-  document.body.classList.toggle("black-and-white");
-  if (document.body.classList.contains("black-and-white")) {
-    localStorage.setItem("mode", "black-and-white");
-  } else {
-    localStorage.removeItem("mode");
-  }
-});
-
-// fetcht details op de secondpage
 const apiUrl = `http://localhost:3000`;
 
 async function fetchRecipeDetails() {
@@ -27,11 +11,9 @@ async function fetchRecipeDetails() {
     const response = await fetch(
       `${apiUrl}/recipes?title=${encodeURIComponent(title)}`
     );
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
     const recipes = await response.json();
     const recipe = recipes.find((r) => r.title === title);
-    if (!recipe) throw new Error("Recipe not found");
 
     const ingredientsList = document.createElement("ul");
     recipe.ingredients.forEach((ing) => {
@@ -56,3 +38,21 @@ async function fetchRecipeDetails() {
 }
 
 fetchRecipeDetails();
+
+// ======= black en white filter ======= 
+
+const toggleModeButton = document.getElementById("toggle-mode");
+const currentMode = localStorage.getItem("mode");
+
+if (currentMode === "black-and-white") {
+  document.body.classList.add("black-and-white");
+}
+
+toggleModeButton.addEventListener("click", () => {
+  document.body.classList.toggle("black-and-white");
+  if (document.body.classList.contains("black-and-white")) {
+    localStorage.setItem("mode", "black-and-white");
+  } else {
+    localStorage.removeItem("mode");
+  }
+});

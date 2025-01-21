@@ -1,3 +1,6 @@
+
+//  ====== Fetcht alle gerechten naar de homepagina =======
+
 const apiUrl = `http://localhost:3000`;
 
 const recipeContainer = document.querySelector(".recipe-container");
@@ -10,9 +13,7 @@ async function fetchtest() {
         "Content-Type": "application/json",
       },
     });
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+
     const recipes = await response.json();
 
     let recipeHTML = "";
@@ -33,7 +34,7 @@ async function fetchtest() {
 
 fetchtest();
 
-// dit is mijn black en white filter
+// ======= black en white filter ======= 
 
 const toggleModeButton = document.getElementById("toggle-mode");
 const currentMode = localStorage.getItem("mode");
@@ -50,6 +51,8 @@ toggleModeButton.addEventListener("click", () => {
     localStorage.removeItem("mode");
   }
 });
+
+// ======= Funtie waarmee ik mijn formulier kan verbergen en tonen =======
 
 const form = document.getElementById("add-recipe-form");
 form.style.display = "none";

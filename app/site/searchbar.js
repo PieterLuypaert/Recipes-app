@@ -4,7 +4,6 @@ document.getElementById("search").addEventListener("input", async (event) => {
 
     try {
         const response = await fetch("http://localhost:3000/recipes");
-        if (!response.ok) throw new Error("Failed to fetch recipes");
 
         const recipes = await response.json();
         const filteredRecipes = recipes.filter(({ title, category, ingredients }) =>
