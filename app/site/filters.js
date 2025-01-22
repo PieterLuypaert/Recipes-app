@@ -1,9 +1,7 @@
 
 // ========= Filter voor ingredienten =========
 
-document
-  .getElementById("view-ingredients")
-  .addEventListener("click", async () => {
+document.getElementById("view-ingredients").addEventListener("click", async () => {
     const recipeContainer = document.getElementById("recipe-container");
 
     try {
@@ -71,6 +69,7 @@ document.getElementById("view-difficulty").addEventListener("click", async () =>
       console.error("Error:", error);
     }
   });
+
 async function viewDifficulty(difficulty) {
   const recipeContainer = document.getElementById("recipe-container");
 
@@ -98,9 +97,7 @@ async function viewDifficulty(difficulty) {
 
 // ========= Filter voor categorien =========
 
-document
-  .getElementById("view-categories")
-  .addEventListener("click", async () => {
+document.getElementById("view-categories").addEventListener("click", async () => {
     const recipeContainer = document.getElementById("recipe-container");
 
     try {
