@@ -237,7 +237,7 @@ form h1 {
   text-align: center;
 }
 
-#message {
+.success-message {
   display: none;
   color: black;
   margin-top: 1rem;
@@ -245,7 +245,7 @@ form h1 {
   text-align: center;
 }
 
-select#difficulty {
+select.difficulty {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -258,12 +258,12 @@ select#difficulty {
   -moz-appearance: none;
 }
 
-select#difficulty:focus {
+select.difficulty:focus {
   outline: none;
   border-color: #ff7e5f;
 }
 
-select#difficulty option {
+select.difficulty option {
   font-size: 1rem;
   padding: 1rem;
 }
