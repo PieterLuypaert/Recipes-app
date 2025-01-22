@@ -38,6 +38,9 @@ async function viewIngredient(ingredient) {
         (recipe) => `
             <div class="recipe">
                 <h2>${recipe.title}</h2>
+                <ul>
+                  ${recipe.ingredients.map((ing) => `<li>${ing.name}</li>`).join("")}
+                </ul>
             </div>
         `
       )
@@ -86,6 +89,7 @@ async function viewDifficulty(difficulty) {
         (recipe) => `
             <div class="recipe">
                 <h2>${recipe.title}</h2>
+                <p>Difficulty: ${recipe.difficulty}</p>
             </div>
         `
       )
@@ -134,6 +138,7 @@ async function viewCategory(category) {
         (recipe) => `
             <div class="recipe">
                 <h2>${recipe.title}</h2>
+                <p>Category: ${recipe.category}</p>
             </div>
         `
       )
