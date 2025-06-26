@@ -1,4 +1,3 @@
-
 //  ====== Fetcht alle gerechten naar de homepagina =======
 
 const apiUrl = `http://localhost:3000`;
@@ -8,6 +7,7 @@ const recipeContainer = document.querySelector(".recipe-container");
 let i = 0;
 async function fetchtest() {
   try {
+    recipeContainer.innerHTML = "<p>Loading...</p>";
     const response = await fetch(`${apiUrl}/recipes?query=""&offset=${i}`, {
       headers: {
         "Content-Type": "application/json",
@@ -15,6 +15,11 @@ async function fetchtest() {
     });
 
     const recipes = await response.json();
+
+    if (recipes.length === 0) {
+      recipeContainer.innerHTML = "<p>Geen recepten gevonden.</p>";
+      return;
+    }
 
     let recipeHTML = "";
     recipes.forEach((recipe) => {
@@ -27,13 +32,14 @@ async function fetchtest() {
     });
     recipeContainer.innerHTML = recipeHTML;
   } catch (error) {
+    recipeContainer.innerHTML = "<p>Fout bij het laden van recepten.</p>";
     console.error("Failed to fetch recipes:", error);
   }
 }
 
 fetchtest();
 
-// ======= black en white filter ======= 
+// ======= black en white filter =======
 
 const toggleModeButton = document.getElementById("toggle-mode");
 const currentMode = localStorage.getItem("mode");

@@ -40,6 +40,28 @@ async function getRecipe(req, res) {
 
 async function createRecipe(req, res) {
   try {
+    const {
+      title,
+      category,
+      ingredients,
+      instructions,
+      cookingTime,
+      difficulty,
+      servings,
+    } = req.body;
+    if (
+      !title ||
+      !category ||
+      !ingredients ||
+      !instructions ||
+      !cookingTime ||
+      !difficulty ||
+      !servings
+    ) {
+      return res
+        .status(400)
+        .json({ message: "Vul alle verplichte velden in." });
+    }
     const posts = await getDataFromFile();
     posts.push({
       id: generateUUID(),
@@ -69,7 +91,7 @@ async function getCategories(req, res) {
   try {
     const posts = await getDataFromFile();
     const categories = [];
-    posts.forEach(post => {
+    posts.forEach((post) => {
       if (!categories.includes(post.category)) {
         categories.push(post.category);
       }
@@ -84,8 +106,8 @@ async function getIngredients(req, res) {
   try {
     const posts = await getDataFromFile();
     const ingredients = [];
-    posts.forEach(post => {
-      post.ingredients.forEach(ingredient => {
+    posts.forEach((post) => {
+      post.ingredients.forEach((ingredient) => {
         if (!ingredients.includes(ingredient.name)) {
           ingredients.push(ingredient.name);
         }
@@ -101,7 +123,7 @@ async function getDifficultyLevels(req, res) {
   try {
     const posts = await getDataFromFile();
     const difficultyLevels = [];
-    posts.forEach(post => {
+    posts.forEach((post) => {
       if (!difficultyLevels.includes(post.difficulty)) {
         difficultyLevels.push(post.difficulty);
       }
@@ -119,5 +141,5 @@ module.exports = {
   deleteRecipe,
   getCategories,
   getIngredients,
-  getDifficultyLevels, 
+  getDifficultyLevels,
 };

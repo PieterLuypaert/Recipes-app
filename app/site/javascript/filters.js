@@ -1,7 +1,8 @@
-
 // ========= Filter voor ingredienten =========
 
-document.getElementById("view-ingredients").addEventListener("click", async () => {
+document
+  .getElementById("view-ingredients")
+  .addEventListener("click", async () => {
     const recipeContainer = document.getElementById("recipe-container");
 
     try {
@@ -33,18 +34,25 @@ async function viewIngredient(ingredient) {
       recipe.ingredients.some((ing) => ing.name === ingredient)
     );
 
-    recipeContainer.innerHTML = filteredRecipes
-      .map(
-        (recipe) => `
-            <div class="recipe">
-                <h2>${recipe.title}</h2>
-                <ul>
-                  ${recipe.ingredients.map((ing) => `<li>${ing.name}</li>`).join("")}
-                </ul>
-            </div>
-        `
-      )
-      .join("");
+    recipeContainer.innerHTML =
+      filteredRecipes.length === 0
+        ? "<p>Geen recepten gevonden met dit ingrediënt.</p>"
+        : filteredRecipes
+            .map(
+              (recipe) => `
+              <div class="recipe">
+                  <h2><a href="secondpage.html?title=${encodeURIComponent(
+                    recipe.title
+                  )}">${recipe.title}</a></h2>
+                  <ul>
+                    ${recipe.ingredients
+                      .map((ing) => `<li>${ing.name}</li>`)
+                      .join("")}
+                  </ul>
+              </div>
+          `
+            )
+            .join("");
   } catch (error) {
     console.error("Error:", error);
   }
@@ -52,7 +60,9 @@ async function viewIngredient(ingredient) {
 
 // ========= Filter voor difficulty =========
 
-document.getElementById("view-difficulty").addEventListener("click", async () => {
+document
+  .getElementById("view-difficulty")
+  .addEventListener("click", async () => {
     const recipeContainer = document.getElementById("recipe-container");
 
     try {
@@ -84,16 +94,21 @@ async function viewDifficulty(difficulty) {
       (recipe) => recipe.difficulty === difficulty
     );
 
-    recipeContainer.innerHTML = filteredRecipes
-      .map(
-        (recipe) => `
-            <div class="recipe">
-                <h2>${recipe.title}</h2>
-                <p>Difficulty: ${recipe.difficulty}</p>
-            </div>
-        `
-      )
-      .join("");
+    recipeContainer.innerHTML =
+      filteredRecipes.length === 0
+        ? "<p>Geen recepten gevonden met dit moeilijkheidsgraad.</p>"
+        : filteredRecipes
+            .map(
+              (recipe) => `
+              <div class="recipe">
+                  <h2><a href="secondpage.html?title=${encodeURIComponent(
+                    recipe.title
+                  )}">${recipe.title}</a></h2>
+                  <p>Difficulty: ${recipe.difficulty}</p>
+              </div>
+          `
+            )
+            .join("");
   } catch (error) {
     console.error("Error:", error);
   }
@@ -101,7 +116,9 @@ async function viewDifficulty(difficulty) {
 
 // ========= Filter voor categorien =========
 
-document.getElementById("view-categories").addEventListener("click", async () => {
+document
+  .getElementById("view-categories")
+  .addEventListener("click", async () => {
     const recipeContainer = document.getElementById("recipe-container");
 
     try {
@@ -133,16 +150,21 @@ async function viewCategory(category) {
       (recipe) => recipe.category === category
     );
 
-    recipeContainer.innerHTML = filteredRecipes
-      .map(
-        (recipe) => `
-            <div class="recipe">
-                <h2>${recipe.title}</h2>
-                <p>Category: ${recipe.category}</p>
-            </div>
-        `
-      )
-      .join("");
+    recipeContainer.innerHTML =
+      filteredRecipes.length === 0
+        ? "<p>Geen recepten gevonden in deze categorie.</p>"
+        : filteredRecipes
+            .map(
+              (recipe) => `
+              <div class="recipe">
+                  <h2><a href="secondpage.html?title=${encodeURIComponent(
+                    recipe.title
+                  )}">${recipe.title}</a></h2>
+                  <p>Category: ${recipe.category}</p>
+              </div>
+          `
+            )
+            .join("");
   } catch (error) {
     console.error("Error:", error);
   }

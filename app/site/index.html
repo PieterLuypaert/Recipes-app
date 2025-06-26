@@ -36,16 +36,24 @@
             <button class="toggle-button" id="toggle-form">klik hier om een gerecht toe te voegen</button>
             <form class="add-recipe-form" id="add-recipe-form">
                 <h1>Recept toevoegen</h1>
+                <label for="title">Titel</label>
                 <input type="text" id="title" placeholder="Titel" required>
+                <label for="category">Categorie</label>
                 <input type="text" id="category" placeholder="Categorie" required>
-                <textarea id="ingredients" placeholder="Ingrediënten" required></textarea>
+                <label for="ingredients">Ingrediënten <span style="font-size:0.9em">(bijv: tomaat:2, kaas:100g)</span>
+                </label>
+                <textarea id="ingredients" placeholder="Ingrediënten (naam:hoeveelheid, ...)" required></textarea>
+                <label for="instructions">Instructies</label>
                 <textarea id="instructions" placeholder="Instructies" required></textarea>
+                <label for="cookingTime">Kooktijd (minuten)</label>
                 <input type="number" id="cookingTime" placeholder="Kooktijd (minuten)" required>
+                <label for="difficulty">Moeilijkheid</label>
                 <input type="text" id="difficulty" placeholder="Moeilijkheid" required>
+                <label for="servings">Porties</label>
                 <input type="number" id="servings" placeholder="Porties" required>
                 <button type="submit">Voeg recept toe</button>
             </form>
-            <div id="message" class="success-message">Recept succesvol toegevoegd</div>
+            <div id="message" class="success-message" style="display:none;">Recept succesvol toegevoegd</div>
         </div>
     </main>
 
