@@ -7,6 +7,10 @@ async function fetchRecipeDetails() {
   if (!title) return;
 
   const detailsDiv = document.querySelector(".recipe-details");
+  if (!detailsDiv) {
+    console.error("Kan .recipe-details niet vinden!");
+    return;
+  }
   detailsDiv.innerHTML = "<p>Loading...</p>";
 
   try {
@@ -40,7 +44,8 @@ async function fetchRecipeDetails() {
       <p>Servings: ${recipe.servings}</p>
     `;
   } catch (error) {
-    detailsDiv.innerHTML = "<p>Fout bij het laden van het recept.</p>";
+    if (detailsDiv)
+      detailsDiv.innerHTML = "<p>Fout bij het laden van het recept.</p>";
     console.error("Failed to fetch recipe details:", error);
   }
 }

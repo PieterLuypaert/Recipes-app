@@ -5,9 +5,13 @@ const { generateUUID } = require("../helpers/utils");
 const postPath = path.join(__dirname, "..", "data", "recipes.json");
 
 async function getDataFromFile() {
-  const data = await fsp.readFile(postPath, "utf8");
-  const posts = JSON.parse(data);
-  return posts;
+  try {
+    const data = await fsp.readFile(postPath, "utf8");
+    const posts = JSON.parse(data);
+    return posts;
+  } catch (err) {
+    throw new Error("Fout bij het lezen van de recepten-data.");
+  }
 }
 
 async function writeDataToFile(path, data) {
@@ -52,7 +56,8 @@ async function createRecipe(req, res) {
     if (
       !title ||
       !category ||
-      !ingredients ||
+      !Array.isArray(ingredients) ||
+      ingredients.length === 0 ||
       !instructions ||
       !cookingTime ||
       !difficulty ||
@@ -60,7 +65,10 @@ async function createRecipe(req, res) {
     ) {
       return res
         .status(400)
-        .json({ message: "Vul alle verplichte velden in." });
+        .json({
+          message:
+            "Vul alle verplichte velden in. Ingrediënten moeten een niet-lege lijst zijn.",
+        });
     }
     const posts = await getDataFromFile();
     posts.push({
@@ -72,7 +80,7 @@ async function createRecipe(req, res) {
 
     res.json({ message: "Er is een nieuwe post toegevoegd" });
   } catch (error) {
-    res.status(500).json(error);
+    res.status(500).json({ message: error.message || "Interne serverfout" });
   }
 }
 

@@ -3,6 +3,7 @@
 document.getElementById("search").addEventListener("input", async (event) => {
   const searchTerm = event.target.value.toLowerCase();
   const recipeContainer = document.getElementById("recipe-container");
+  if (recipeContainer) recipeContainer.innerHTML = "<p>Loading...</p>";
 
   try {
     const response = await fetch("http://localhost:3000/recipes");
@@ -13,21 +14,24 @@ document.getElementById("search").addEventListener("input", async (event) => {
       )
     );
 
-    recipeContainer.innerHTML =
-      filteredRecipes.length === 0
-        ? "<p>Geen resultaten gevonden.</p>"
-        : filteredRecipes
-            .map(
-              ({ title, difficulty }) => `
-                <div class="recipe">
-                    <h2><a href="secondpage.html?title=${encodeURIComponent(
-                      title
-                    )}">${title}</a></h2>
-                </div>
-            `
-            )
-            .join("");
+    if (recipeContainer) {
+      recipeContainer.innerHTML =
+        filteredRecipes.length === 0
+          ? "<p>Geen resultaten gevonden.</p>"
+          : filteredRecipes
+              .map(
+                ({ title, difficulty }) => `
+                  <div class="recipe">
+                      <h2><a href="secondpage.html?title=${encodeURIComponent(
+                        title
+                      )}">${title}</a></h2>
+                  </div>
+              `
+              )
+              .join("");
+    }
   } catch (error) {
     console.error("Error:", error);
+    if (recipeContainer) recipeContainer.innerHTML = "<p>Fout bij zoeken.</p>";
   }
 });

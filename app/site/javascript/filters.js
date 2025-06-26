@@ -4,6 +4,7 @@ document
   .getElementById("view-ingredients")
   .addEventListener("click", async () => {
     const recipeContainer = document.getElementById("recipe-container");
+    if (recipeContainer) recipeContainer.innerHTML = "<p>Loading...</p>";
 
     try {
       const response = await fetch("http://localhost:3000/ingredients");
@@ -25,6 +26,7 @@ document
 
 async function viewIngredient(ingredient) {
   const recipeContainer = document.getElementById("recipe-container");
+  if (recipeContainer) recipeContainer.innerHTML = "<p>Loading...</p>";
 
   try {
     const response = await fetch("http://localhost:3000/recipes");
@@ -64,6 +66,7 @@ document
   .getElementById("view-difficulty")
   .addEventListener("click", async () => {
     const recipeContainer = document.getElementById("recipe-container");
+    if (recipeContainer) recipeContainer.innerHTML = "<p>Loading...</p>";
 
     try {
       const response = await fetch("http://localhost:3000/difficulty-levels");
@@ -85,6 +88,7 @@ document
 
 async function viewDifficulty(difficulty) {
   const recipeContainer = document.getElementById("recipe-container");
+  if (recipeContainer) recipeContainer.innerHTML = "<p>Loading...</p>";
 
   try {
     const response = await fetch("http://localhost:3000/recipes");
@@ -120,6 +124,7 @@ document
   .getElementById("view-categories")
   .addEventListener("click", async () => {
     const recipeContainer = document.getElementById("recipe-container");
+    if (recipeContainer) recipeContainer.innerHTML = "<p>Loading...</p>";
 
     try {
       const response = await fetch("http://localhost:3000/categories");
@@ -141,6 +146,7 @@ document
 
 async function viewCategory(category) {
   const recipeContainer = document.getElementById("recipe-container");
+  if (recipeContainer) recipeContainer.innerHTML = "<p>Loading...</p>";
 
   try {
     const response = await fetch("http://localhost:3000/recipes");

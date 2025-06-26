@@ -15,6 +15,10 @@ document
       const [name, amount] = ingredientsInput[i]
         .split(":")
         .map((str) => str.trim());
+      if (!name || !amount) {
+        alert("Ingrediënten moeten het formaat 'naam:hoeveelheid' hebben.");
+        return;
+      }
       ingredients.push({ name, amount });
     }
     const instructions = document.getElementById("instructions").value;

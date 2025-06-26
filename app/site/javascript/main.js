@@ -3,11 +3,14 @@
 const apiUrl = `http://localhost:3000`;
 
 const recipeContainer = document.querySelector(".recipe-container");
+if (!recipeContainer) {
+  console.error("Kan .recipe-container niet vinden!");
+}
 
 let i = 0;
 async function fetchtest() {
   try {
-    recipeContainer.innerHTML = "<p>Loading...</p>";
+    if (recipeContainer) recipeContainer.innerHTML = "<p>Loading...</p>";
     const response = await fetch(`${apiUrl}/recipes?query=""&offset=${i}`, {
       headers: {
         "Content-Type": "application/json",
@@ -16,23 +19,29 @@ async function fetchtest() {
 
     const recipes = await response.json();
 
-    if (recipes.length === 0) {
-      recipeContainer.innerHTML = "<p>Geen recepten gevonden.</p>";
+    if (!recipes || recipes.length === 0) {
+      if (recipeContainer)
+        recipeContainer.innerHTML = "<p>Geen recepten gevonden.</p>";
       return;
     }
 
     let recipeHTML = "";
     recipes.forEach((recipe) => {
-      recipeHTML += `<div class="recipe">
-        <h2><a href="secondpage.html?title=${encodeURIComponent(
-          recipe.title
-        )}">${recipe.title}</a></h2>
-        <button class="delete-recipe" data-id="${recipe.id}">Verwijder</button>
-      </div>`;
+      recipeHTML += `
+        <div class="recipe">
+          <h2><a href="secondpage.html?title=${encodeURIComponent(
+            recipe.title
+          )}">${recipe.title}</a></h2>
+          <button class="delete-recipe" data-id="${
+            recipe.id
+          }">Verwijder</button>
+        </div>
+      `;
     });
-    recipeContainer.innerHTML = recipeHTML;
+    if (recipeContainer) recipeContainer.innerHTML = recipeHTML;
   } catch (error) {
-    recipeContainer.innerHTML = "<p>Fout bij het laden van recepten.</p>";
+    if (recipeContainer)
+      recipeContainer.innerHTML = "<p>Fout bij het laden van recepten.</p>";
     console.error("Failed to fetch recipes:", error);
   }
 }
